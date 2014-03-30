@@ -3,17 +3,19 @@
 require_relative "../lib/decrypt"
 require_relative "../lib/copy_file"
 
-# Decrypt variables
+# Decrypt constants
   PGPFILE = "<dir where PGP file lives"
   KEYFILE = "keys/<key file>"
-# CopyFile variables
+# CopyFile constants
   DEST = "<destination dir for decrypted file"
+# Script constants
+  OUTFILE = "out.txt"
 
 puts "File decrypted"
 decrypted = Decrypt.decrypt_file
 
 puts "Decrypted file stored"
-File.open("files/out.txt", 'w') {|f| f.write(decrypted) }
+File.open("files/#{OUTFILE}", 'w') {|f| f.write(decrypted) }
 
 puts "Decrypted file copied"
 CopyFile.mvfiles
