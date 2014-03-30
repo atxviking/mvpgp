@@ -18,7 +18,7 @@ bundle install
 ```ruby
 # Decrypt constants
   PGPFILE = "<dir where PGP file lives"
-  KEYFILE = "keys/<key file>"
+  KEYFILE = "<key file>"
 # CopyFile constants
   DEST = "<destination dir for decrypted file"
 # Script constants

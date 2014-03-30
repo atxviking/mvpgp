@@ -12,7 +12,7 @@ module Decrypt
 
   def decrypt_file
     encrypted_data = GPGME::Data.new(File.open("#{PGPFILE}"))
-    key = GPGME::Data.new(File.open("#{KEYFILE}"))
+    key = GPGME::Data.new(File.open("keys/#{KEYFILE}"))
 
     ctx = GPGME::Ctx.new :passphrase_callback => method(:passfunc)
     ctx.import_keys key
