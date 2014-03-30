@@ -3,7 +3,7 @@ mvpgp
 
 Random script used to decrypt pgp files and move them to specified location. 
 
-Getting Started
+Script Setup
 ---------------
 
 * Ensure Ruby 2.0.0 is installed. 
@@ -13,6 +13,7 @@ Getting Started
 bundle install
 ```
 
+* Copy PGP public key(s) to the `keys` directory
 * Set constants to desired values by modifying the `scripts/decrypt_and_move.rb` file.
 
 ```ruby
@@ -25,12 +26,11 @@ bundle install
   OUTFILE = "out.txt"
 ```
 
-Usage
+Script Usage
 ---------------
 
 Decrypt pgp file and copy results to a destination directory
 * Make sure you are in this packages root directory
-* Copy PGP public key(s) to the `keys` directory
 * Run `decrypt_and_move` script
 
 ```ruby
