@@ -4,6 +4,9 @@ require_relative "../config/boot"
 require_relative "../lib/decrypt"
 require_relative "../lib/copy_file"
 
+puts "Archive crypted file"
+CopyFile.archive
+
 puts "File decrypted"
 decrypted = Decrypt.decrypt_file
 
