@@ -6,7 +6,7 @@ module Decrypt
 
   def passfunc(obj, uid_hint, passphrase_info, prev_was_bad, fd)
     io = IO.for_fd(fd, 'w')
-    io.puts "PASSPHRASE"
+    io.puts "#{PASSPHRASE}"
     io.flush
   end
 

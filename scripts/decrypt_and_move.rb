@@ -1,15 +1,8 @@
 #!/usr/bin/env ruby
 
+require_relative "../config/boot"
 require_relative "../lib/decrypt"
 require_relative "../lib/copy_file"
-
-# Decrypt constants
-  PGPFILE = "<dir where PGP file lives"
-  KEYFILE = "<key file>"
-# CopyFile constants
-  DEST = "<destination dir for decrypted file"
-# Script constants
-  OUTFILE = "out.txt"
 
 puts "File decrypted"
 decrypted = Decrypt.decrypt_file
