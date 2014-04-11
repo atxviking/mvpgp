@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
 
 # Decrypt constants
-  PGPFILE = "<PGP file name"
+  PGPFILE = "<path to file> + <PGP file name>"
   KEYFILE = "<key file>"
-  PASSPHRASE = "PASSPHRASE"
+  PASSPHRASE = "<PASSPHRASE>"
 # CopyFile constants
-  DEST = "<destination dir for decrypted file"
+  DEST = "<destination dir for decrypted file>"
 # Script constants
   OUTFILE = "out.txt"

@@ -14,14 +14,15 @@ bundle install
 ```
 
 * Copy PGP public key(s) to the `keys` directory
-* Set constants to desired values by modifying the `scripts/decrypt_and_move.rb` file.
+* Set constants to desired values by modifying the `config/boot.rb` file.
 
 ```ruby
 # Decrypt constants
-  PGPFILE = "<dir where PGP file lives"
+  PGPFILE = "<path to file> + <PGP file name>"
   KEYFILE = "<key file>"
+  PASSPHRASE = "<PASSPHRASE>"
 # CopyFile constants
-  DEST = "<destination dir for decrypted file"
+  DEST = "<destination dir for decrypted file>"
 # Script constants
   OUTFILE = "out.txt"
 ```
